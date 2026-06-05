@@ -38,4 +38,4 @@ labels: ["documentation", "backlog"]
 
 Ao trabalhar nessa issue, registre o tempo gasto em um comentário seguindo o formato abaixo
 
-Exemplo: [horas: 2.5]
+Exemplo: [horas: 2.5] - Descrição do que foi feito
