@@ -5,8 +5,6 @@ title: "[TASK] "
 labels: ["task", "backlog"]
 ---
 
-![Logo do Fix](/imgs/logo_fix.png)
-
 ## 📋 Descrição
 
 > Descreva de forma clara o que precisa ser feito
@@ -39,4 +37,8 @@ labels: ["task", "backlog"]
 
 Ao trabalhar nessa issue, registre o tempo gasto em um comentário seguindo o formato abaixo
 
-Exemplo: [horas: 2.5] - Descrição do que foi feito
+Exemplo: 
+
++2h30m
+
+Comentário

@@ -5,8 +5,6 @@ title: "[BUG]"
 labels: ["bug", "backlog"]
 ---
 
-![Logo do Fix](/imgs/logo_fix.png)
-
 ## 🐛 Descrição do Bug
 
 > Descreva de forma clara o que está acontecendo de errado
@@ -39,4 +37,8 @@ labels: ["bug", "backlog"]
 
 Ao trabalhar nessa issue, registre o tempo gasto em um comentário seguindo o formato abaixo
 
-Exemplo: [horas: 2.5] - Comentário do que foi feito
+Exemplo: 
+
++2h30m
+
+Comentário

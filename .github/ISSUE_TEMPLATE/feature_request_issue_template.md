@@ -5,8 +5,6 @@ title: "[FEATURE]"
 labels: ["feature", "backlog"]
 ---
 
-![Logo do Fix](/imgs/logo_fix.png)
-
 ## 📋 Descrição
 
 > Descreva de forma clara e objetiva a funcionalidade que deve ser implementada
@@ -31,4 +29,8 @@ labels: ["feature", "backlog"]
 
 Ao trabalhar nessa issue, registre o tempo gasto em um comentário seguindo o formato abaixo
 
-Exemplo: [horas: 2.5] - Descrição do que foi feito
+Exemplo: 
+
++2h30m
+
+Comentário
