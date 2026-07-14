@@ -5,8 +5,6 @@ title: "[PERFORMANCE]"
 labels: ["performance", "backlog"]
 ---
 
-![Logo do Fix](/imgs/logo_fix.png)
-
 ## 📋 Descrição
 
 > Descreva o problema de performance ou a melhoria desejada
@@ -51,4 +49,8 @@ labels: ["performance", "backlog"]
 
 Ao trabalhar nessa issue, registre o tempo gasto em um comentário seguindo o formato abaixo
 
-Exemplo: [horas: 2.5] - Descrição do que foi feito
+Exemplo: 
+
++2h30m
+
+Comentário

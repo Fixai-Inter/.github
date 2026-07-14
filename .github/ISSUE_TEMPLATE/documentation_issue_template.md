@@ -5,8 +5,6 @@ title: "[DOCS]"
 labels: ["documentation", "backlog"]
 ---
 
-![Logo do Fix](/imgs/logo_fix.png)
-
 ## 📋 Descrição
 
 > Descreva o que precisa ser documentado ou qual documentação existente precisa ser atualizada
@@ -38,4 +36,8 @@ labels: ["documentation", "backlog"]
 
 Ao trabalhar nessa issue, registre o tempo gasto em um comentário seguindo o formato abaixo
 
-Exemplo: [horas: 2.5] - Descrição do que foi feito
+Exemplo: 
+
++2h30m
+
+Comentário

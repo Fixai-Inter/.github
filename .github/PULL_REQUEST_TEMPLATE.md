@@ -1,5 +1,3 @@
-![Logo do Fix](/imgs/logo_fix.png)
-
 ## 📋 Descrição
 
 > Descreva de forma clara e objetiva **o que foi feito** nesta PR. Explique o contexto do problema e a solução adotada.
@@ -60,3 +58,9 @@
 ## ⚠️ Pontos de Atenção para o Revisor
 
 > Destaque áreas específicas do código que merecem atenção extra, partes incertas ou que precisam de feedback.
+
+---
+
+## 🤖 Uso consciente de Inteligência Artificial
+
+> Se você utilizou Inteligência Artificial em alguma etapa deste PR, descreva brevemente em que parte ela foi aplicada e por qual motivo. Compartilhe também o que você aprendeu ou ajustou a partir dessa interação, para mostrar que a IA foi usada como apoio e não apenas como execução automática.

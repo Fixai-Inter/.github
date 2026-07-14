@@ -5,8 +5,6 @@ title: "[SECURITY] "
 labels: ["security", "backlog"]
 ---
 
-![Logo do Fix](/imgs/logo_fix.png)
-
 > ⚠️ **Atenção:** Se esta vulnerabilidade for crítica e ainda não corrigida, considere **não detalhar publicamente** como explorá-la nesta issue. Prefira reportar diretamente ao responsável técnico via canal privado antes de abrir este registro.
 
 ## 📋 Descrição
@@ -50,4 +48,8 @@ labels: ["security", "backlog"]
 
 Ao trabalhar nessa issue, registre o tempo gasto em um comentário seguindo o formato abaixo
 
-Exemplo: [horas: 2.5] - Descrição do que foi feito
+Exemplo: 
+
++2h30m
+
+Comentário
