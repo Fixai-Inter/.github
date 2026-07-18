@@ -1,202 +1,183 @@
-# 📖 Guia de Contribuição e Padrões do Time
+# 📚 Guia de Engenharia de Software
 
-Este repositório centraliza os padrões de trabalho do time: templates de issues, templates de pull requests e as convenções que devem ser seguidas por todos os integrantes. Leia com atenção antes de começar a contribuir.
+> Bem-vindo ao **Guia Oficial de Engenharia de Software** da equipe.
 
----
-
-## 📋 Sumário
-
-- [Registro de Horas](#-registro-de-horas)
-- [Templates de Issue](#-templates-de-issue)
-- [Templates de Pull Request](#-templates-de-pull-request)
-- [Fluxo do Board](#-fluxo-do-board)
-- [Boas Práticas Gerais](#-boas-práticas-gerais)
+> Esta documentação define os padrões, processos e boas práticas adotados durante o desenvolvimento dos projetos. Seu objetivo é garantir consistência entre os repositórios, facilitar o onboarding de novos integrantes e promover entregas com maior qualidade, previsibilidade e rastreabilidade.
 
 ---
 
-## ⏱️ Registro de Horas
+# 🎯 Objetivo
 
-O registro de horas é feito diretamente nos **comentários das issues** no GitHub. Esse padrão é fundamental para o funcionamento do sistema de análise automática que consolida os dados de tempo trabalhado pelo time.
+Este repositório centraliza toda a documentação utilizada pelo time de desenvolvimento.
 
-### Formato obrigatório
+Ao seguir estes padrões, buscamos:
 
+* Padronizar o processo de desenvolvimento entre todos os integrantes;
+* Facilitar a colaboração e o code review;
+* Melhorar a rastreabilidade das alterações;
+* Automatizar processos utilizando as ferramentas do GitHub;
+* Reduzir retrabalho e inconsistências;
+* Tornar o onboarding de novos desenvolvedores mais rápido.
+
+> ✅ **Boa prática**
+>
+> A documentação deve ser considerada parte do produto. Sempre que um processo evoluir ou uma nova convenção for adotada, este guia também deve ser atualizado.
+
+---
+
+# 🧭 Como utilizar esta documentação
+
+Cada assunto foi separado em um documento específico para facilitar a consulta e a manutenção.
+
+Leia os documentos na ordem abaixo durante o onboarding e utilize-os como referência durante o desenvolvimento.
+
+| Documento                     | Descrição                                                                                                       |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 📖 **Introdução**             | Objetivos, escopo, princípios da equipe e visão geral do processo de desenvolvimento.                           |
+| 🌳 **Padrões Git**            | Convenções de repositórios, branches, commits, Pull Requests, Code Review, estratégia de merge e versionamento. |
+| 📋 **Organização do Projeto** | Estruturação das atividades, Issues, GitHub Projects, Kanban e organização das entregas.                        |
+| 📝 **Templates**              | Modelos oficiais utilizados pela equipe para Issues, Pull Requests e demais artefatos.                          |
+| 💡 **Exemplos**               | Exemplos práticos de branches, commits, Pull Requests, fluxo de desenvolvimento e boas práticas.                |
+
+---
+
+# 📂 Estrutura da documentação
+
+```text
+.
+├── README.md
+└── docs
+    ├── introducao.md
+    ├── padroes-git.md
+    ├── organizacao-projeto.md
+    ├── templates.md
+    └── exemplos.md
 ```
-[horas: 2.5] - Descrição do que foi feito
+
+---
+
+# 🔄 Fluxo de Desenvolvimento
+
+O fluxo de trabalho adotado pela equipe pode ser resumido da seguinte forma:
+
+```mermaid
+A[Criação da Issue]
+B[Criação da Branch]
+C[Desenvolvimento]
+D[Commits]
+E[Pull Request]
+F[Code Review]
+G[Homologação]
+H[Release]
+I[Produção]
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+F --> G
+G --> H
+H --> I
 ```
 
-### Regras do formato
-
-- O campo `[horas: X]` deve vir sempre no início do comentário
-- O valor deve ser um número decimal usando ponto como separador. Use `1.5` para uma hora e meia, `0.5` para trinta minutos, `2.0` para duas horas exatas
-- A descrição após o traço é obrigatória e deve resumir o que foi feito naquele período
-- Cada comentário deve representar uma sessão de trabalho. Se trabalhou em momentos diferentes do dia, faça comentários separados
-
-### Exemplos corretos
-
-```
-[horas: 1.5] - Implementação do endpoint de autenticação
-[horas: 0.5] - Code review do PR #42
-[horas: 3.0] - Correção do bug de timeout na integração com o serviço de pagamento
-[horas: 2.5] - Reunião de refinamento e atualização da documentação técnica
-```
-
-### Exemplos incorretos
-
-```
-[hora: 1,5] - Uso de vírgula no lugar de ponto
-2.5h - Implementação - Formato fora do padrão
-[hora: 2.5] implementação sem o traço separador
-```
-
-> ⚠️ Comentários fora do formato padrão não serão reconhecidos pelo sistema de análise automática e as horas não serão contabilizadas.
+Cada etapa possui regras específicas documentadas nos arquivos desta documentação.
 
 ---
 
-## 🗂️ Templates de Issue
+# 📚 Documentação
 
-Ao clicar em **New Issue** dentro de qualquer repositório da organização, você verá a tela de seleção com os templates disponíveis. Escolha sempre o template mais adequado para o que está sendo registrado.
+## 📖 Introdução
 
----
+Apresenta a visão geral da engenharia da equipe, seus objetivos, princípios e escopo da documentação.
 
-### ✨ Feature Request
-
-**Quando usar:** para registrar ou sugerir uma nova funcionalidade no sistema, seja ela solicitada pelo cliente, definida pelo produto ou identificada pelo próprio time técnico.
-
-Este template é o mais estratégico do fluxo. Além de descrever o que será feito, ele pede a motivação por trás da funcionalidade, quem se beneficia, o que está fora do escopo e os critérios de aceitação. Preencher essas informações com cuidado evita retrabalho e garante que todo o time entenda o real valor da entrega antes de começar.
-
-**Label aplicada automaticamente:** `feature`
+> **Arquivo:** [docs/introducao.md](docs/introducao.md)
 
 ---
 
-### 🐛 Bug Report
+## 🌳 Padrões Git
 
-**Quando usar:** para reportar qualquer comportamento inesperado, erro ou falha no sistema, seja encontrado em produção, homologação ou durante o desenvolvimento.
+Define todas as convenções relacionadas ao uso do Git e do GitHub, incluindo:
 
-Um bom bug report precisa ser detalhado o suficiente para que qualquer pessoa consiga reproduzir o problema sem precisar perguntar nada a quem abriu. Por isso o template pede o passo a passo de reprodução, o comportamento esperado, o comportamento atual e informações do ambiente. Quanto mais completo, mais rápida será a correção.
+* Organização de repositórios;
+* Estratégia de branches;
+* Conventional Commits;
+* Pull Requests;
+* Code Review;
+* Merge Strategy;
+* Semantic Versioning;
+* Releases.
 
-**Label aplicada automaticamente:** `bug`
-
----
-
-### 📌 Task
-
-**Quando usar:** para tarefas técnicas internas que não se encaixam como feature nem como bug. Exemplos comuns são criar uma integração com um serviço externo, configurar um ambiente, implementar um script, realizar uma migração de dados ou qualquer trabalho técnico que precisa ser rastreado no board.
-
-**Label aplicada automaticamente:** `task`
-
----
-
-### 📚 Documentation
-
-**Quando usar:** para registrar a necessidade de criar ou atualizar documentação, seja ela técnica ou de produto. Exemplos incluem documentar uma API, atualizar o README de um repositório, escrever um guia de onboarding ou registrar decisões arquiteturais.
-
-Times maduros tratam documentação como parte do trabalho, não como algo opcional. Toda funcionalidade entregue sem documentação adequada gera dívida para o time no futuro.
-
-**Label aplicada automaticamente:** `documentation`
+> **Arquivo:** [docs/padroes-git.md](docs/padroes-git.md)
 
 ---
 
-### ⚡ Performance
+## 📋 Organização do Projeto
 
-**Quando usar:** para registrar problemas ou oportunidades de melhoria relacionados a desempenho, como tempo de resposta lento, alto consumo de memória, queries demoradas, bundle grande ou qualquer situação onde o sistema está funcionando corretamente mas de forma ineficiente.
+Documenta a forma como as atividades são planejadas e acompanhadas.
 
-Este template pede métricas atuais e esperadas justamente para que a melhoria seja objetiva e mensurável, e não apenas subjetiva.
+Inclui:
 
-**Label aplicada automaticamente:** `performance`
+* Estruturação de Épicos e Tasks;
+* Organização das Issues;
+* GitHub Projects;
+* Fluxo Kanban;
+* Registro de horas.
 
----
-
-### 🔒 Security
-
-**Quando usar:** para registrar vulnerabilidades, falhas de segurança ou dependências com CVEs conhecidos identificados no sistema.
-
-> ⚠️ **Atenção:** se a vulnerabilidade for crítica e ainda não estiver corrigida, **não detalhe publicamente como explorá-la** nesta issue. Reporte primeiro ao responsável técnico via canal privado e só então abra o registro com o nível de detalhe adequado.
-
-**Label aplicada automaticamente:** `security`
+> **Arquivo:** [docs/organizacao-projeto.md](docs/organizacao-projeto.md)
 
 ---
 
-### 🧪 Test
+## 📝 Templates
 
-**Quando usar:** para registrar a necessidade de escrever ou melhorar testes em partes do sistema que estão sem cobertura ou com cobertura insuficiente. Pode ser motivado por um bug recorrente em uma área sem testes, por uma feature nova crítica ou por um débito técnico identificado durante o desenvolvimento.
+Reúne os modelos oficiais utilizados durante o desenvolvimento.
 
-**Label aplicada automaticamente:** `test`
+Exemplos:
 
----
+* Templates de Issues;
+* Templates de Pull Requests;
+* Checklists.
 
-## 🔀 Templates de Pull Request
-
-Ao abrir um Pull Request, utilize o template correspondente ao tipo de mudança que está sendo entregue. Cada PR deve ter um tipo bem definido para facilitar o processo de revisão e manter o histórico organizado.
-
-Os links abaixo abrem o PR já com o template correto selecionado. Salve esta página ou adicione esses links aos seus favoritos.
-
-| Template | Quando usar | Link direto |
-|---|---|---|
-| ✨ Feature | Nova funcionalidade implementada | [Abrir PR de Feature](?template=feature_pull_request_template.md) |
-| 🐛 Bug Fix | Correção de um problema existente | [Abrir PR de Bug Fix](?template=bugfix_pull_request_template.md) |
-| 🚨 Hotfix | Correção urgente para produção | [Abrir PR de Hotfix](?template=hotfix_pull_request_template.md) |
-| 🔧 Refactoring | Melhoria de código sem alteração de comportamento | [Abrir PR de Refactoring](?template=refactoring_pull_request_template.md) |
-| 🔩 Chore | Manutenção, dependências, configurações | [Abrir PR de Chore](?template=chore_pull_request_template.md) |
+> **Arquivo:** [docs/templates.md](docs/templates.md)
 
 ---
 
-### ✨ Feature
+## 💡 Exemplos
 
-Para PRs que entregam uma nova funcionalidade. O template pede a descrição do que foi implementado, a issue relacionada, como testar e o registro de horas. Todo PR de feature precisa estar vinculado a uma issue de Feature Request existente.
+Contém exemplos práticos utilizados como referência para o time.
 
----
+Exemplos de:
 
-### 🐛 Bug Fix
+* Branches;
+* Commits;
+* Pull Requests;
+* Releases;
+* Fluxos completos de desenvolvimento.
 
-Para PRs que corrigem um problema existente. O diferencial deste template em relação ao de feature é a seção de reprodução do bug antes da correção, que ajuda o revisor a entender o contexto sem precisar buscar a issue original.
-
----
-
-### 🚨 Hotfix
-
-Para correções urgentes que precisam ir para produção rapidamente. O template inclui uma seção de impacto em produção e de risco da mudança, que são informações críticas para quem vai revisar e aprovar com agilidade. Todo hotfix deve ser revisado por ao menos um integrante sênior antes do merge.
+> **Arquivo:** [docs/exemplos.md](docs/exemplos.md)
 
 ---
 
-### 🔧 Refactoring
+# 🤝 Contribuindo
 
-Para PRs que melhoram a estrutura interna do código sem alterar nenhum comportamento externo. O ponto mais importante neste template é a confirmação explícita de que nenhuma funcionalidade foi adicionada, removida ou alterada. O revisor precisa dessa garantia para focar na qualidade do código.
+Toda alteração nesta documentação deve seguir os mesmos padrões definidos para os demais projetos da equipe.
 
----
+Sempre que uma nova convenção for adotada, a documentação correspondente deverá ser atualizada para refletir o processo vigente.
 
-### 🔩 Chore
-
-Para tarefas de manutenção como atualização de dependências, ajustes em configurações, mudanças em pipelines de CI/CD e outros trabalhos que não afetam diretamente o produto. É o template mais simples, mas importante para manter o histórico de mudanças organizado e rastreável.
-
----
-
-## 📊 Fluxo do Board
-
-O board do projeto segue os seguintes estados. Cada integrante é responsável por manter o status das suas issues atualizado ao longo do dia.
-
-| Estado | Descrição |
-|---|---|
-| **Backlog** | Issue criada e registrada, ainda não priorizada para a sprint atual |
-| **Ready** | Issue priorizada, refinada e pronta para ser iniciada |
-| **In Progress** | Alguém está trabalhando ativamente nessa issue agora |
-| **In Review** | O PR foi aberto e está aguardando revisão do time |
-| **Done** | Issue concluída, PR mergeado e entrega validada |
+> ⚠️ **Importante**
+>
+> Este guia representa a referência oficial da equipe para processos de engenharia de software. Em caso de divergência entre a documentação e uma prática adotada durante o desenvolvimento, a documentação deve ser revisada para manter ambos alinhados.
 
 ---
 
-## ✅ Boas Práticas Gerais
+# 🚀 Próximos passos
 
-**Sobre issues:**
-- Toda issue deve ter ao menos um assignee definido antes de ir para In Progress
-- Critérios de aceitação precisam estar preenchidos antes do desenvolvimento começar
-- Registre as horas ao longo do trabalho, não apenas no final. Isso garante mais precisão nos dados
+Caso esta seja sua primeira contribuição para a equipe, recomenda-se realizar a leitura na seguinte ordem:
 
-**Sobre pull requests:**
-- Todo PR deve referenciar a issue relacionada usando `Closes #número` na descrição
-- PRs não devem ficar abertos sem revisão por mais de um dia útil
-- Não faça merge do próprio PR sem ao menos uma aprovação de outro integrante, exceto em casos de hotfix urgente previamente alinhado
+1. [docs/introducao.md](docs/introducao.md)
+2. [docs/padroes-git.md](docs/padroes-git.md)
+3. [docs/organizacao-projeto.md](docs/organizacao-projeto.md)
+4. [docs/templates.md](docs/templates.md)
+5. [docs/exemplos.md](docs/exemplos.md)
 
-**Sobre o registro de horas:**
-- Registre sempre que pausar ou encerrar uma sessão de trabalho em uma issue
-- Inclua tempo de reuniões, code reviews e pesquisa quando estiverem relacionados a uma issue específica
-- Em caso de dúvida sobre o formato, consulte a seção de Registro de Horas neste documento
+Ao finalizar a leitura, você estará apto a seguir o fluxo de desenvolvimento adotado pela equipe e contribuir de forma consistente com os padrões estabelecidos.
