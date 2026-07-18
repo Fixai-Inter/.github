@@ -139,6 +139,7 @@ Por esse motivo, toda alteração deve passar pelos processos definidos neste gu
 O processo de desenvolvimento adotado pela equipe segue um fluxo padronizado, desde a criação de uma atividade até sua disponibilização em produção.
 
 ```mermaid
+flowchart TD
 
 A[Issue]
 B[Branch]

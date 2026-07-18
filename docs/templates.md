@@ -848,6 +848,8 @@ Ao criar Issues e Pull Requests, siga as recomendações abaixo.
 O fluxo recomendado para utilização dos templates é apresentado abaixo.
 
 ```mermaid
+flowchart TD
+
 A[Criar Issue]
 B[Selecionar Template]
 C[Desenvolver]

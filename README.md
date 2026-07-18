@@ -61,6 +61,8 @@ Leia os documentos na ordem abaixo durante o onboarding e utilize-os como refer�
 O fluxo de trabalho adotado pela equipe pode ser resumido da seguinte forma:
 
 ```mermaid
+flowchart TD
+
 A[Criação da Issue]
 B[Criação da Branch]
 C[Desenvolvimento]
