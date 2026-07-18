@@ -225,6 +225,8 @@ Durante a revisão, verifique principalmente:
 Fluxo adotado pela equipe:
 
 ```mermaid
+flowchart TD
+
 A[feature/*]
 B[dev]
 C[hml]
@@ -292,6 +294,8 @@ As configurações abaixo deverão ser aplicadas às branches protegidas sempre 
 Após a configuração das Branch Protection Rules, toda alteração seguirá automaticamente o fluxo abaixo:
 
 ```mermaid
+flowchart TD
+
 A[Branch de Trabalho]
 B[Pull Request]
 C[Code Review]
@@ -415,6 +419,8 @@ Nova versão: MAJOR
 # 9. Fluxo Completo
 
 ```mermaid
+flowchart TD
+
 Issue --> Branch
 
 Branch --> Commit

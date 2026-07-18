@@ -61,6 +61,8 @@ Além disso, esse processo permite acompanhar a evolução do projeto e gerar m�
 As atividades da equipe seguem uma estrutura hierárquica.
 
 ```mermaid
+flowchart TD
+
 A[ÉPICO]
 
 A --> B[Task]
@@ -280,6 +282,8 @@ Exemplo recomendado:
 O fluxo de planejamento da equipe segue a sequência abaixo:
 
 ```mermaid
+flowchart TD
+
 A[Criação do Épico]
 
 B[Criação das Tasks]
@@ -483,6 +487,8 @@ A equipe utiliza a metodologia **Kanban** para organizar o fluxo de desenvolvime
 Cada coluna representa uma etapa do ciclo de vida de uma atividade.
 
 ```mermaid
+flowchart TD
+
 A[Backlog]
 
 B[Em Espera]
@@ -728,6 +734,8 @@ Durante o gerenciamento das atividades, procure seguir as recomendações abaixo
 # Fluxo completo da organização
 
 ```mermaid
+flowchart TD
+
 A[Épico]
 
 A --> B[Task]

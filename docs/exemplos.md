@@ -22,6 +22,8 @@
 Todo desenvolvimento realizado pela equipe deverá seguir o fluxo abaixo.
 
 ```mermaid
+flowchart TD
+
 A[Planejamento]
 B[Criar Issue]
 C[Adicionar ao GitHub Project]
@@ -388,6 +390,8 @@ Code Review do PR #28.
 O diagrama abaixo resume o fluxo de trabalho adotado pela equipe.
 
 ```mermaid
+flowchart TD
+
 A[Ler README]
 
 A --> B[Consultar Padrões de Git]
